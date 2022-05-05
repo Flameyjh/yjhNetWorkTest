@@ -17,6 +17,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.httpBtn).setOnClickListener {
             myStartActivity<HttpURLConnectionActivity>()
         }
+
+        findViewById<Button>(R.id.okhttpBtn).setOnClickListener {
+            myStartActivity<HttpURLConnectionActivity>()
+        }
     }
 
     private inline fun <reified T> myStartActivity(){
